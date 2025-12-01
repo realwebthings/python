@@ -9,3 +9,6 @@ def add(a, b):
 
 def multiply(a, b):
     return a * b
+
+
+print("main in message: ", __name__)
