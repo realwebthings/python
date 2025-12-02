@@ -1,7 +1,10 @@
-# 
+# Duck typing  : Another way to achieve polymorphism besides Inheritance
+#                Object must have the methods that are being called. Object much have the minimum neccessary attributes/methods
+#                                
 # Duck typing : concept where the class of an object is less important than the methods/attributes
 #               class type is not checked if minimum methods/attributes are present
 #               "if it walks like a duck, and it quacks like a duck, then it must be a a duck."
+
 
 class Duck:
 

@@ -1,5 +1,7 @@
 # super() : Function used to give access to the methods of a parent class.
 #           Returns a temporary object of a parent class when used
+# super() : Function used in child class to call methods from parent class (superclass)
+#           Allows you to extend the functionality of the inherited methods
 
 
 # class Rectangle:
