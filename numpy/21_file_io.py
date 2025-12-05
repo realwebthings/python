@@ -35,12 +35,16 @@ arr3 = np.array([[7, 8], [9, 10]])
 np.savez('multiple_arrays.npz', first=arr1, second=arr2, third=arr3)
 print("Saved multiple arrays to 'multiple_arrays.npz'")
 
+# Save multiple arrays compressed
+np.savez_compressed('compressed_arrays.npz', first=arr1, second=arr2, third=arr3)
+print("Saved compressed arrays to 'compressed_arrays.npz'")
+
 # Load multiple arrays
 loaded = np.load('multiple_arrays.npz')
+loaded_compressed = np.load('compressed_arrays.npz')
 print(f"Available arrays: {list(loaded.keys())}")
 print(f"First array: {loaded['first']}")
-print(f"Second array: {loaded['second']}")
-print(f"Third array:\n{loaded['third']}")
+print(f"Compressed first array: {loaded_compressed['first']}")
 
 print("\n" + "=" * 50)
 print("3. TEXT FILE I/O")
@@ -87,7 +91,7 @@ print("Created memory-mapped file 'mmap_data.dat'")
 print(f"First 10 elements: {mmap_array[0, :10]}")
 
 # Cleanup files
-cleanup_files = ['data.npy', 'multiple_arrays.npz', 'data.txt', 
+cleanup_files = ['data.npy', 'multiple_arrays.npz', 'compressed_arrays.npz', 'data.txt', 
                 'data_with_header.txt', 'mixed_data.txt', 'mmap_data.dat']
 for file in cleanup_files:
     if os.path.exists(file):
@@ -100,6 +104,7 @@ print("=" * 50)
 print("BINARY FILES:")
 print("- np.save()/np.load(): Single array (.npy)")
 print("- np.savez()/np.load(): Multiple arrays (.npz)")
+print("- np.savez_compressed(): Compressed multiple arrays (.npz)")
 print("\nTEXT FILES:")
 print("- np.savetxt()/np.loadtxt(): Human-readable format")
 print("- Supports CSV, custom delimiters, headers")
