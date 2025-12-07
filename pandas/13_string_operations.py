@@ -1,0 +1,77 @@
+import pandas as pd
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(current_dir, 'data', 'pokemon.csv')
+df = pd.read_csv(csv_path)
+
+print("=" * 60)
+print("STRING OPERATIONS")
+print("=" * 60)
+
+print("\n" + "=" * 50)
+print("1. LOWERCASE / UPPERCASE")
+print("=" * 50)
+print("Original:", df['Name'].head(3).tolist())
+print("Lower:", df['Name'].str.lower().head(3).tolist())
+print("Upper:", df['Name'].str.upper().head(3).tolist())
+print("Title:", df['Name'].str.title().head(3).tolist())
+
+print("\n" + "=" * 50)
+print("2. STRING LENGTH")
+print("=" * 50)
+df['Name_Length'] = df['Name'].str.len()
+print(df[['Name', 'Name_Length']].head(5))
+
+print("\n" + "=" * 50)
+print("3. CHECK IF CONTAINS")
+print("=" * 50)
+df['Has_Char'] = df['Name'].str.contains('char', case=False)
+print(df[['Name', 'Has_Char']].head(10))
+
+print("\n" + "=" * 50)
+print("4. STARTS WITH / ENDS WITH")
+print("=" * 50)
+print("Starts with 'P':")
+print(df[df['Name'].str.startswith('P')][['Name']].head(5))
+print("\nEnds with 'chu':")
+print(df[df['Name'].str.endswith('chu')][['Name']].head(5))
+
+print("\n" + "=" * 50)
+print("5. REPLACE STRING")
+print("=" * 50)
+df['Type_Modified'] = df['Type'].str.replace('Electric', 'Lightning')
+print(df[['Type', 'Type_Modified']].head(5))
+
+print("\n" + "=" * 50)
+print("6. SPLIT STRING")
+print("=" * 50)
+df_split = pd.DataFrame({'Full_Name': ['Ash Ketchum', 'Misty Williams', 'Brock Harrison']})
+df_split[['First', 'Last']] = df_split['Full_Name'].str.split(' ', expand=True)
+print(df_split)
+
+print("\n" + "=" * 50)
+print("7. STRIP WHITESPACE")
+print("=" * 50)
+df_space = pd.DataFrame({'Name': ['  Pikachu  ', 'Charizard ', '  Blastoise']})
+print("Original:", df_space['Name'].tolist())
+print("Stripped:", df_space['Name'].str.strip().tolist())
+
+print("\n" + "=" * 50)
+print("8. EXTRACT WITH REGEX")
+print("=" * 50)
+df_extract = pd.DataFrame({'Code': ['PKM-001', 'PKM-002', 'PKM-003']})
+df_extract['Number'] = df_extract['Code'].str.extract(r'(\d+)')
+print(df_extract)
+
+print("\n" + "=" * 50)
+print("9. SLICE STRING")
+print("=" * 50)
+print("First 3 chars:", df['Name'].str[:3].head(5).tolist())
+print("Last 3 chars:", df['Name'].str[-3:].head(5).tolist())
+
+print("\n" + "=" * 50)
+print("10. COUNT OCCURRENCES")
+print("=" * 50)
+df['A_Count'] = df['Name'].str.count('a')
+print(df[['Name', 'A_Count']].head(5))
