@@ -1,0 +1,162 @@
+[
+  {
+    "Name": "Pikachu",
+    "Type": "Electric",
+    "HP": 35,
+    "Attack": 55,
+    "Defense": 40,
+    "Speed": 90
+  },
+  {
+    "Name": "Charizard",
+    "Type": "Fire",
+    "HP": 78,
+    "Attack": 84,
+    "Defense": 78,
+    "Speed": 100
+  },
+  {
+    "Name": "Blastoise",
+    "Type": "Water",
+    "HP": 79,
+    "Attack": 83,
+    "Defense": 100,
+    "Speed": 78
+  },
+  {
+    "Name": "Venusaur",
+    "Type": "Grass",
+    "HP": 80,
+    "Attack": 82,
+    "Defense": 83,
+    "Speed": 80
+  },
+  {
+    "Name": "Gengar",
+    "Type": "Ghost",
+    "HP": 60,
+    "Attack": 65,
+    "Defense": 60,
+    "Speed": 110
+  },
+  {
+    "Name": "Dragonite",
+    "Type": "Dragon",
+    "HP": 91,
+    "Attack": 134,
+    "Defense": 95,
+    "Speed": 80
+  },
+  {
+    "Name": "Mewtwo",
+    "Type": "Psychic",
+    "HP": 106,
+    "Attack": 110,
+    "Defense": 90,
+    "Speed": 130
+  },
+  {
+    "Name": "Snorlax",
+    "Type": "Normal",
+    "HP": 160,
+    "Attack": 110,
+    "Defense": 65,
+    "Speed": 30
+  },
+  {
+    "Name": "Gyarados",
+    "Type": "Water",
+    "HP": 95,
+    "Attack": 125,
+    "Defense": 79,
+    "Speed": 81
+  },
+  {
+    "Name": "Alakazam",
+    "Type": "Psychic",
+    "HP": 55,
+    "Attack": 50,
+    "Defense": 45,
+    "Speed": 120
+  },
+  {
+    "Name": "Machamp",
+    "Type": "Fighting",
+    "HP": 90,
+    "Attack": 130,
+    "Defense": 80,
+    "Speed": 55
+  },
+  {
+    "Name": "Golem",
+    "Type": "Rock",
+    "HP": 80,
+    "Attack": 120,
+    "Defense": 130,
+    "Speed": 45
+  },
+  {
+    "Name": "Lapras",
+    "Type": "Water",
+    "HP": 130,
+    "Attack": 85,
+    "Defense": 80,
+    "Speed": 60
+  },
+  {
+    "Name": "Arcanine",
+    "Type": "Fire",
+    "HP": 90,
+    "Attack": 110,
+    "Defense": 80,
+    "Speed": 95
+  },
+  {
+    "Name": "Jolteon",
+    "Type": "Electric",
+    "HP": 65,
+    "Attack": 65,
+    "Defense": 60,
+    "Speed": 130
+  },
+  {
+    "Name": "Vaporeon",
+    "Type": "Water",
+    "HP": 130,
+    "Attack": 65,
+    "Defense": 60,
+    "Speed": 65
+  },
+  {
+    "Name": "Flareon",
+    "Type": "Fire",
+    "HP": 65,
+    "Attack": 130,
+    "Defense": 60,
+    "Speed": 65
+  },
+  {
+    "Name": "Eevee",
+    "Type": "Normal",
+    "HP": 55,
+    "Attack": 55,
+    "Defense": 50,
+    "Speed": 55
+  },
+  {
+    "Name": "Mew",
+    "Type": "Psychic",
+    "HP": 100,
+    "Attack": 100,
+    "Defense": 100,
+    "Speed": 100
+  },
+  {
+    "Name": "Articuno",
+    "Type": "Ice",
+    "HP": 90,
+    "Attack": 85,
+    "Defense": 100,
+    "Speed": 85
+  }
+]
