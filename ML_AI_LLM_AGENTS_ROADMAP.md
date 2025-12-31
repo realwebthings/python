@@ -23,10 +23,27 @@
 - ✅ Matplotlib (plotting, visualization)
 
 **Math Knowledge Needed:**
-- Linear Algebra: vectors, matrices, dot products, eigenvalues
-- Statistics: mean, variance, standard deviation, distributions
-- Calculus: derivatives, gradients (basic understanding)
-- Probability: conditional probability, Bayes theorem
+
+### Core Mathematical Foundations (Must Master First)
+- **Arithmetic**: Basic operations, exponents, logarithms, growth rates
+- **Algebra**: Equations, inequalities, polynomials, matrices
+- **Set Theory**: Functions, relations, mappings
+- **Linear Algebra**: Vectors, matrices, dot products, eigenvalues, singular value decomposition
+- **Probability**: Random variables, distributions, Bayes theorem, conditional probability
+- **Statistics**: Mean, variance, standard deviation, distributions, hypothesis testing, regression
+- **Calculus**: Derivatives, gradients, integration, multivariable calculus
+
+### Supportive Mathematical Topics
+- **Combinatorics**: Counting, permutations, combinations
+- **Mathematical Analysis**: Limits, sequences, convergence
+- **Applied Mathematics**: Differential equations, numerical methods
+- **Number Theory**: Basic concepts (useful for cryptography)
+
+### Advanced Mathematical Topics (Research Level)
+- **Optimization Theory**: Convexity, Lagrange multipliers, constrained optimization
+- **Information Theory**: Entropy, KL divergence, mutual information
+- **Graph Theory**: Networks, connectivity, graph algorithms
+- **Topology**: Spaces, continuity, manifolds (for geometric deep learning)
 
 ---
 
@@ -36,11 +53,28 @@
 **Goal:** Master classical ML algorithms and scikit-learn
 
 ### Week 1-2: Math & Theory
-- [ ] Linear algebra review (vectors, matrices, operations)
-- [ ] Statistics fundamentals (distributions, hypothesis testing)
-- [ ] Gradient descent & optimization basics
-- [ ] Bias-variance tradeoff
-- [ ] Overfitting & underfitting
+- [ ] **Arithmetic & Algebra Review**
+  - Exponents, logarithms, growth rates
+  - Equations, inequalities, polynomials
+- [ ] **Linear Algebra Fundamentals** (Most Critical)
+  - Vectors, matrices, operations
+  - Dot products, matrix multiplication
+  - Eigenvalues, eigenvectors
+  - Singular Value Decomposition (SVD)
+- [ ] **Probability & Statistics**
+  - Random variables, distributions
+  - Bayes theorem, conditional probability
+  - Hypothesis testing, variance
+- [ ] **Calculus for ML**
+  - Derivatives, partial derivatives
+  - Gradients, chain rule
+  - Multivariable calculus basics
+- [ ] **Set Theory Basics**
+  - Functions, relations, mappings
+- [ ] **ML Theory Foundations**
+  - Gradient descent & optimization basics
+  - Bias-variance tradeoff
+  - Overfitting & underfitting
 
 ### Week 3-4: Supervised Learning
 - [ ] Linear Regression
@@ -148,11 +182,18 @@ scipy         # Scientific computing
 - [ ] Time series forecasting
 
 ### Advanced Topics
-- [ ] Regularization (Dropout, L1/L2)
-- [ ] Batch normalization
-- [ ] Learning rate scheduling
-- [ ] Early stopping
-- [ ] Hyperparameter tuning
+- [ ] **Mathematical Foundations**
+  - Optimization theory (convexity, Lagrange multipliers)
+  - Information theory (entropy, KL divergence)
+  - Combinatorics for probability models
+- [ ] **Regularization Techniques**
+  - Dropout, L1/L2 regularization
+  - Batch normalization
+  - Early stopping
+- [ ] **Training Optimization**
+  - Learning rate scheduling
+  - Hyperparameter tuning
+  - Advanced optimizers
 
 ### Key Libraries
 ```python
@@ -195,21 +236,21 @@ keras          # High-level API for TensorFlow
 - [ ] Named Entity Recognition (NER)
 
 ### Week 3-4: Transformers & Attention
-- [ ] Attention mechanism
-  - Self-attention
+- [ ] **Mathematical Foundations**
+  - Information theory basics (entropy, mutual information)
+  - Graph theory for attention mechanisms
+- [ ] **Attention Mechanism**
+  - Self-attention mathematics
   - Multi-head attention
   - Scaled dot-product attention
-- [ ] Transformer architecture
+- [ ] **Transformer Architecture**
   - Encoder-decoder structure
-  - Positional encoding
+  - Positional encoding mathematics
   - Layer normalization
-- [ ] BERT (Bidirectional Encoder)
-  - Masked language modeling
-  - Next sentence prediction
-- [ ] GPT (Generative Pre-trained Transformer)
-  - Autoregressive generation
-  - Causal attention
-- [ ] T5, RoBERTa, DistilBERT
+- [ ] **Pre-trained Models**
+  - BERT (Bidirectional Encoder)
+  - GPT (Generative Pre-trained Transformer)
+  - T5, RoBERTa, DistilBERT
 
 ### Week 5-6: Fine-tuning & Applications
 - [ ] Using Hugging Face Transformers
@@ -368,21 +409,25 @@ tiktoken            # OpenAI tokenizer
   - Human-in-the-loop
 
 ### Week 5-6: Advanced Agent Concepts
-- [ ] Multi-agent systems
-  - Agent communication
+- [ ] **Mathematical Foundations for Agents**
+  - Graph theory for multi-agent systems
+  - Game theory basics
+  - Decision theory and utility functions
+- [ ] **Multi-agent Systems**
+  - Agent communication protocols
   - Collaborative agents
   - Competitive agents
-- [ ] Agent frameworks
+- [ ] **Agent Frameworks**
   - AutoGPT
   - BabyAGI
   - Microsoft AutoGen
   - CrewAI
-- [ ] Planning & reasoning
+- [ ] **Planning & Reasoning**
   - Chain-of-thought
   - Tree of thoughts
   - Self-reflection
   - Self-correction
-- [ ] Agent evaluation
+- [ ] **Agent Evaluation**
   - Success metrics
   - Cost tracking
   - Latency monitoring
